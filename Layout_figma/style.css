@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 1319px;
+    height: 928px;
+    margin-right: 303px;
+    margin-bottom: 15px;
+    margin-left: 298px;
+}
+
+.header {
+    width: 1289px;
+    height: 114px;
+    margin-top: 14px;
+    margin-left: 18px; 
+    margin-right: 12x;
+    margin-bottom: 21px;
+    padding-left: 59px;
+    padding-right: 200px;
+    padding-top: 26px;
+    padding-bottom: 48px;
+}
+
+.navigation {
+   padding: 11px 14px 12px 9px;
+}
+
+.menu {
+    size: 14px; 
+    line-height: 16.41px;
+}
+
+.home {
+    margin-left: 346px;
+    color: #F25822;
+}
+
+a {
+    color: #000000;
+    font-weight: 600px;
+}
+
+.main_content {
+    margin-left: 18px;
+    margin-right: 27px;
+    margin-left: 16px;
+    padding-right: 109.25px;
+    padding-bottom: 27px;
+}
+
+.main_content_img{
+    width: 544.81px;
+    height: 374.84px;
+    margin-top: 13.71px;
+}
+
+.main_content_text {
+    width: 522px;
+    padding-top: 15px;
+    padding-bottom: 27px;
+    padding-left: 16px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 36px;
+    margin-right: 49px;
+    margin-bottom: 17px;
+}
+
+p {
+    margin-right: 82px;
+    margin-bottom: 16px;
+    margin-left: 41px;
+}
+
+.buttons {
+    width: 374px;
+    height: 94px;
+    margin-left: 20px;
+    margin-bottom: 38px;
+    margin-right: 195px;
+    margin-top: 16px;
+    padding-left: 23px;
+    padding-right: 49px;
+}
+
+.button_start {
+    color:#FFFFFF;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    font-size: 15px;
+    line-height: 18px;
+    width: 140px;
+    height: 50px;
+    margin-top: 21px;
+    margin-right: 72px; 
+    margin-bottom: 23px;
+}
+
+.button_end {
+    width: 90px;
+    height: 19px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #AAAAAA;
+    margin-top: 36px;
+}
+
+.logo {
+    width: 1920px;
+    height: 243px;
+    margin-top: 53px;
+    margin-right: 45px;
+    margin-bottom: 32;
+    margin-left: 34;
+}
+
