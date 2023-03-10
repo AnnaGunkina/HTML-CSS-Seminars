@@ -656,14 +656,37 @@ a {
     flex-wrap: wrap;
   }
 
-  .footer {
+.footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around; 
     gap: 10px;
     align-items: center;
   }
+  .icons {
+    padding-top: 43px;
+    padding-bottom: 40px;
+  }
+  .foot_p {
+    padding-bottom: 9px;
+  }
+  .hurt {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #222224;
+  }
+
+  .bold {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #222224;
+  }
 }
+
 
 
 
