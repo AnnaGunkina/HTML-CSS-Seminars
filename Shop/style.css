@@ -49,6 +49,35 @@ a {
   gap: 33px;
 }
 
+.search {
+  transition: transform 0.4s;
+}
+
+.search:hover {
+  transform: scale(1.3);
+}
+
+.search:hover path {
+  fill: #F16D7F;
+}
+
+.reg {
+  transition: transform 0.4s;
+}
+
+.reg:hover path {
+  fill: #F16D7F;
+}
+
+.cart{
+  transition: transform 0.4s;
+}
+
+.cart:hover path {
+  fill: #F16D7F;
+}
+
+
 
 .header__checkbox {
   position: absolute;
@@ -192,7 +221,11 @@ a {
   position: relative;
 }
 
-.item_acces {
+.item:hover {
+  transform: scale(0.9);
+}
+
+.acces {
   min-height: 180px;
   grid-column: 1 / -1;
 }
@@ -262,7 +295,7 @@ a {
   font-family: 'Lato';
 }
 
-.product-box__content {
+.featuredItems {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
@@ -338,7 +371,7 @@ a {
   color: #5D5D5D;
 }
 
-.price {
+.product__price {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -375,21 +408,18 @@ a {
 
 .privilege {
   background-color: #222222;
-  padding-top: 104px;
-  padding-bottom: 104px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .privilege_item {
-  width: 360px;
+  max-width: 360px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  flex-direction: column;
 }
 
 .privilege_heading {
@@ -398,6 +428,7 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
+  padding-bottom: 16px;
 }
 
 .privilege_text {
@@ -409,6 +440,14 @@ a {
   color: #FBFBFB;
 }
 
+.privilege_img {
+  padding-bottom: 28px;
+}
+
+.privilege_img:hover {
+  transition: transform 1s;
+  transform: rotate(360deg);
+}
 .feedback {
   background-image: url(/Shop/img/subscribe.jpg);
   background-size: 100% 100%;
@@ -428,6 +467,10 @@ a {
 
 .face {
   width: 250px;
+}
+
+.face:hover {
+  transform: scale(1.5) ;
 }
 
 .face_write {
@@ -467,7 +510,6 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .enter {
   background: #E1E1E1;
   font-style: normal;
@@ -477,10 +519,10 @@ a {
   display: flex;
   align-items: center;
   color: #222224;
-  opacity: 0.67;
-  padding: 7px 22px;
+  padding: 12px 22px;
   border-radius: 45px 0px 0px 45px;
   border: 0;
+  width: 256px;
 }
 
 .feed_butt {
@@ -496,6 +538,10 @@ a {
   padding: 7px 8px;
   border-radius: 0px 45px 45px 0px;
   border: 0;
+}
+
+.feed_butt:hover {
+  transform: scale(1.1);
 }
 
 .footer {
@@ -514,25 +560,29 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+  width: min(655px,calc(calc(calc(calc(100vw - 768px) * 350) / 832) + 305px))
 }
 
 .icons {
   display: flex;
   align-items: center;
   gap: 20px;
-  transition: all 1s;
+} 
+
+.icon_hov:hover {
+  transform: scale(1.3);
 }
 
-.icon_hov:hover  {
-  filter: brightness(0.5); 
-}
+.icon_hov:hover path {
+  fill: #F16D7F;
+} 
 
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
 
   body {
     max-width: 100vw;
@@ -542,6 +592,7 @@ a {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
   }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -569,13 +620,34 @@ a {
   .header__link-site {
     display: none;
   }
-  .product-box__content {
+  .featuredItems {
     grid-template-columns: repeat( auto-fit, minmax(300px, 2fr) );
-   
   }
   
-}
- 
+  .icons {
+  padding-top: 43px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: nowrap;
+  } 
+
+  .foot_p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+  }
+
+  .footer {
+    height: 79px;
+  }
+}  
+
 @media screen and (min-width: 319px) and (max-width: 767px) {
   body {
     max-width: 100vw;
@@ -642,7 +714,7 @@ a {
     width: 300px;
   }
 
-  .product-box__content {
+  .featuredItems {
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     gap: 16px;
   }
@@ -656,12 +728,13 @@ a {
     flex-wrap: wrap;
   }
 
-.footer {
+  .footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around; 
-    gap: 10px;
+    gap: 7px;
     align-items: center;
+    height: 143px;
   }
   .icons {
     padding-top: 43px;
